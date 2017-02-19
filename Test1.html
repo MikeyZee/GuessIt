@@ -4,23 +4,97 @@
 <head>
 
 <style>
+
+html {
+  width:100%;
+  height:100%;
+}
+
 body {
-background-color: #D1F2EB
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
+h1 {
+  text-decoration: underline;
+  color: White;
+  }
+
+div {
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+  width:98%;
+  height:78%;
+  text-align:center;
 
 }
- 
-h1 {
-  color: red
-  }
-  
- 
+
+p.Zapfino {
+  font-family: Zapfino, Arial, Helvetica;
+  text-align:center;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 25px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Arial, Helvetica;
+    font-weight:bold;
+}
+
+.button1 {
+    background-color: #D1D5D6;
+    color: black;
+    border: 2px solid #4CAF50;
+    position: relative; top: 45%;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
 
 </style>
-  <title> Guess The Number! </title>
+  <title>Guess The Number!</title>
 </head>
 
 <body>
- <h1> Hello </h1>
-</body>
+ <h1> Guess The Number! </h1>
+ <div>
+   <button id="sgame" class="button button1" onclick="run()" >Start New Game</button>
+ </div>
 
+<script>
+function run() {
+  window.location.href=www.google.com.au
+
+}
+</script>
+
+</body>
+<footer>
+  <p class= "Zapfino"> Developed by Michael Zenkis </p>
+
+</footer>
   </html>
