@@ -16,7 +16,7 @@ body {
 h1 {
   text-decoration: underline;
   color: White;
-  }
+}
 
 div {
   background: #466368;
@@ -29,7 +29,7 @@ div {
 
 }
 
-p.Zapfino {
+p.Zapfino { /* Developed by Michael Zenkis */
   font-family: Zapfino, Arial, Helvetica;
   text-align:center;
   font-size: 14px;
@@ -39,31 +39,31 @@ p.Zapfino {
 
 
 .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 25px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: Arial, Helvetica;
-    font-weight:bold;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Arial, Helvetica;
+  font-weight:bold;
 }
 
 .button1 {
-    background-color: #D1D5D6;
-    color: black;
-    border: 2px solid #4CAF50;
-    position: relative; top: 45%;
+  background-color: #D1D5D6;
+  color: black;
+  border: 2px solid #4CAF50;
+  position: relative; top: 45%;
 }
 
 .button1:hover {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4CAF50;
+  color: white;
 }
