@@ -56,7 +56,7 @@ p.Zapfino { /* Developed by Michael Zenkis */
   font-weight:bold;
 }
 
-.button1 {
+.button1 { /* Easy Button */
   background-color: #D1D5D6;
   color: black;
   border: 2px solid #4CAF50;
@@ -65,5 +65,29 @@ p.Zapfino { /* Developed by Michael Zenkis */
 
 .button1:hover {
   background-color: #4CAF50;
+  color: white;
+}
+
+.button2 { /* Medium Button */
+  background-color: #D1D5D6;
+  color: black;
+  border: 2px solid #157ADF;
+  position: relative; top: 45%;
+}
+
+.button2:hover {
+  background-color: #157ADF;
+  color: white;
+}
+
+.button3 { /* Hard Button */
+  background-color: #D1D5D6;
+  color: black;
+  border: 2px solid #F74242;
+  position: relative; top: 45%;
+}
+
+.button3:hover {
+  background-color: #F74242;
   color: white;
 }
