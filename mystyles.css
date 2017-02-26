@@ -91,3 +91,22 @@ p.Zapfino { /* Developed by Michael Zenkis */
   background-color: #F74242;
   color: white;
 }
+
+.guessinput {
+  padding: .5%;
+  padding-right: 14%;
+  position: fixed; bottom: 45%;
+  position: fixed; right: 37.3%;
+
+}
+
+.guesstitle {
+  font-size: 250%;
+  color: white;
+
+}
+
+.submitinput {
+  position: fixed; bottom: 40%;
+  position: fixed; right: 57.85%;
+}
