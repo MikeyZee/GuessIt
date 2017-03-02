@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
+  <title>Guess it!</title>
+</head>
+
+<body>
+  <h1> Guess it! </h1>
+  <div>
+    <form>
+      <p class="guesstitle"> Guess<br> </p>
+      <input class= "guessinput" id="guess" type="text" placeholder="Guess 1 - 10"><br>
+      <input class= "submitinput" type="button" value="Submit" onclick="creategennum();userguess()">
+    </form>
+
+  </div>
+  <script>
+
+function creategennum() {
+  var gennum = Math.floor(Math.random()*3);
+
+
+}
+
+  function userguess() {
+    gennum = var gennum 
+    guess = document.getElementById("guess").value;
+
+
+
+    if (guess == gennum) {
+      window.alert(guess + " " + "is correct");
+      else if (guess < gennum) {
+        window.alert(guess + " " + "is too low");
+        else {
+          window.alert(guess + " " + "is too high")
+        }
+
+      }
+    }
+
+  }
+
+
+  </script>
+  <footer>
+    <p class= "Zapfino"> Developed by Michael Zenkis </p>
+  </footer>
+</body>
+
+
+</html>
