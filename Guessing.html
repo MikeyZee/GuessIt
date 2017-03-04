@@ -18,14 +18,35 @@
 
   </div>
   <script>
-let gennum;
-let range = 50 //Want  to get rid of this line
-function creategennum() {
-  gennum = 1 + Math.floor(Math.random()*range);
-  window.alert(gennum)
+
+  var getQueryString = function ( field, url ) {
+    var href = url ? url : window.location.href;
+    var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+    var string = reg.exec(href);
+    return string ? string[1] : null;
+  };
+  let gennum;
+  function creategennum() {
+  //var qs = new Querystring();
+    var diff = getQueryString('diff');
+    switch(diff) {
+    case "easy":
+        var range = 50;
+        break;
+    case "medium":
+        var range = 100;
+        break;
+    case "hard":
+        var range = 200;
+        break;
+    default:
+        var range = null;
+    }
+    gennum = Math.floor(Math.random()*range);
+    window.alert(gennum)
 // Variable range needs to be defined when user clicks difficulty
 
-}
+  }
 
   function userguess() {
     guess = document.getElementById("guess").value;
