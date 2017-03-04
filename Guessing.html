@@ -11,15 +11,18 @@
   <div>
     <form>
       <p class="guesstitle"> Guess<br> </p>
+      <button onclick="creategennum()"> </button>
       <input class= "guessinput" id="guess" type="text" placeholder="Guess 1 - 10"><br>
-      <input class= "submitinput" type="button" value="Submit" onclick="creategennum();userguess()">
+      <input class= "submitinput" type="button" value="Submit" onclick="userguess()">
     </form>
 
   </div>
   <script>
-
+var gennum;
 function creategennum() {
-  var gennum = Math.floor(Math.random()*3);
+  window.alert(gennum);
+  gennum = Math.floor(Math.random()*5);
+  window.alert(gennum)
 // Will eventually make the *3 into a variable which will be set during
 //the options screen when they choose their difficulty,
 //eg difficulty is easy variable will be 50 and so on
@@ -27,24 +30,20 @@ function creategennum() {
 }
 
   function userguess() {
-    gennum = var gennum
+//    gennum = var gennum
     guess = document.getElementById("guess").value;
+    window.alert(gennum);
 
 
 
     if (guess == gennum) {
-      window.alert(guess + " " + "is correct");
-      else if (guess < gennum) {
-        window.alert(guess + " " + "is too low");
-        else {
-          window.alert(guess + " " + "is too high")
-        }
+      window.alert(guess + " " + "is correct");}
+    else if (guess < gennum) {
+      window.alert(guess + " " + "is too low"); }
+    else {
+      window.alert(guess + " " + "is too high");}
 
-      }
-    }
-
-  }
-
+}
 
   </script>
   <footer>
