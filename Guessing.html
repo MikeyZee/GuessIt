@@ -9,40 +9,34 @@
 <body>
   <h1> Guess it! </h1>
   <div>
+    <button onclick="creategennum()">Create New RandomNumber</button>
     <form>
       <p class="guesstitle"> Guess<br> </p>
-      <button onclick="creategennum()"> </button>
       <input class= "guessinput" id="guess" type="text" placeholder="Guess 1 - 10"><br>
       <input class= "submitinput" type="button" value="Submit" onclick="userguess()">
     </form>
 
   </div>
   <script>
-var gennum;
+let gennum;
+let range = 20
 function creategennum() {
-  window.alert(gennum);
-  gennum = Math.floor(Math.random()*5);
+  gennum = 1 + Math.floor(Math.random()*range);
   window.alert(gennum)
-// Will eventually make the *3 into a variable which will be set during
-//the options screen when they choose their difficulty,
-//eg difficulty is easy variable will be 50 and so on
+// Variable range needs to be defined when user clicks difficulty
 
 }
 
   function userguess() {
-//    gennum = var gennum
     guess = document.getElementById("guess").value;
-    window.alert(gennum);
-
-
 
     if (guess == gennum) {
-      window.alert(guess + " " + "is correct");}
-    else if (guess < gennum) {
-      window.alert(guess + " " + "is too low"); }
-    else {
-      window.alert(guess + " " + "is too high");}
-
+      window.alert(guess + " " + "is correct");
+    }else if (guess < gennum) {
+      window.alert(guess + " " + "is too low");
+    }else {
+      window.alert(guess + " " + "is too high");
+    }
 }
 
   </script>
