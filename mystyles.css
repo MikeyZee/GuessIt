@@ -23,7 +23,7 @@ div {
   background: -webkit-linear-gradient(#648880, #293f50);
   background:    -moz-linear-gradient(#648880, #293f50);
   background:         linear-gradient(#648880, #293f50);
-  width:98%;
+  width:100%;
   height:78%;
   text-align:center;
 
@@ -95,7 +95,7 @@ p.Zapfino { /* Developed by Michael Zenkis */
 }
 
 .button4 { /* Back Button */
-  background-color: #D1D5D6;
+  background-color: #f2f2f2;
   color: black;
   border: 2px solid #F74242;
   padding: 10px 20px;

@@ -56,9 +56,12 @@
       window.alert(guess + " " + "is correct");
     }else if (guess < gennum) {
       window.alert(guess + " " + "is too low");
-    }else {
+    }else if (guess > gennum) {
       window.alert(guess + " " + "is too high");
+    }else {
+      window.alert(guess + " " + "is not a valid response, please enter a number")
     }
+
 }
 
   </script>
