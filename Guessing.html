@@ -11,7 +11,7 @@
   <h1> Guess it! </h1>
   <div>
     <form>
-      <p class="guesstitle"> Guess<br> </p>
+    <br>  <p class="guesstitle"> Guess The Number!<br> </p>
       <input class= "guessinput" id="guess" type="text" placeholder="Guess 1 - 10"><br>
       <input class= "submitinput" type="button" value="Submit" onclick="userguess()">
     </form>
@@ -44,7 +44,7 @@
         var range = null;
     }
     gennum = Math.floor((Math.random()*range) + 1); //random number between 1 and range
-    window.alert(gennum)
+
 
   }
 
@@ -67,6 +67,8 @@
   <footer>
     <p class= "Zapfino"> Developed by Michael Zenkis </p>
       <a href="Index.html" class="button4 button">Home</a>
+      <a href="Options.html" class="button5 button">Change Difficulty</a>
+
   </footer>
 </body>
 
