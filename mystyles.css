@@ -56,6 +56,8 @@ p.Zapfino { /* Developed by Michael Zenkis */
   font-weight:bold;
 }
 
+
+
 .button1 { /* Easy Button */
   background-color: #D1D5D6;
   color: black;
@@ -91,6 +93,23 @@ p.Zapfino { /* Developed by Michael Zenkis */
   background-color: #F74242;
   color: white;
 }
+
+.button4 { /* Back Button */
+  background-color: #D1D5D6;
+  color: black;
+  border: 2px solid #F74242;
+  padding: 10px 20px;
+  position: absolute;left: 3%;
+  position:absolute;bottom: 10%;
+
+
+}
+
+.button4:hover {
+  background-color: #F74242;
+  color: white;
+}
+
 
 .guessinput {
   padding: .5%;
