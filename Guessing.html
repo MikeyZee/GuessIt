@@ -12,7 +12,7 @@
   <div>
     <form>
     <br>  <p class="guesstitle"> Guess The Number!<br> </p>
-      <input class= "guessinput" id="guess" type="text" placeholder="Guess 1 - 10"><br>
+      <input class= "guessinput" id="guess" type="text"><br>
       <input class= "submitinput" type="button" value="Submit" onclick="userguess()">
     </form>
 
@@ -45,7 +45,7 @@
     }
     gennum = Math.floor((Math.random()*range) + 1); //random number between 1 and range
 
-
+document.getElementById("guess").placeholder="Guess 1 - " + range
   }
 
   function userguess() {
