@@ -10,10 +10,11 @@
 
   <h1> Guess it! </h1>
   <div>
-    <form>
+    <form id="guessingform" onsubmit="return false" >
     <br>  <p class="guesstitle"> Guess The Number!<br> </p>
       <input class= "guessinput" id="guess" type="text"><br>
-      <input class= "submitinput" type="button" value="Submit" onclick="userguess()">
+      <input class= "submitinput" type="Submit" value="Submit" onclick="userguess()"
+      onsubmit="return true">
     </form>
 
   </div>
@@ -52,7 +53,8 @@ document.getElementById("guess").placeholder="Guess 1 - " + range
     guess = document.getElementById("guess").value;
 
     if (guess == gennum) {
-      window.alert(guess + " " + "is correct");
+      window.alert(guess + " " + "is correct! Click the Home button to play again!");
+
     }else if (guess < gennum) {
       window.alert(guess + " " + "is too low");
     }else if (guess > gennum) {
@@ -60,6 +62,7 @@ document.getElementById("guess").placeholder="Guess 1 - " + range
     }else {
       window.alert(guess + " " + "is not a valid response, please enter a number")
     }
+    document.getElementById("guessingform").reset();
 
 }
 
